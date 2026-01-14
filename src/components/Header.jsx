@@ -54,8 +54,9 @@ const Header = () => {
   const navLinks = [
     { label: "Platform", href: "#platform" },
     { label: "Decision Flow", href: "#flow" },
+    { label: "Operation", href: "#operation" },
     { label: "Features", href: "#features" },
-    { label: "ROI Calculator", href: "#roi" },
+    { label: "Decision Simulator", href: "#roi" },
     { label: "Pricing", href: "#pricing" },
     { label: "Contact", href: "#contact" },
   ];
@@ -98,22 +99,6 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
-            <button
-              className="px-4 py-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Sign In
-            </button>
-            <button
-              className="px-4 py-2 rounded-lg bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Get Started
-            </button>
-          </div>
-
           {/* Mobile Button */}
           <button
             className="md:hidden p-2 rounded-lg text-white hover:bg-slate-800 transition"
@@ -140,21 +125,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-
-            <div className="flex flex-col gap-2 pt-4">
-              <button
-                className="w-full px-4 py-2 rounded-lg text-slate-300 hover:bg-slate-800 transition"
-                onClick={() => setIsOpen(false)}
-              >
-                Sign In
-              </button>
-              <button
-                className="w-full px-4 py-2 rounded-lg bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition"
-                onClick={() => setIsOpen(false)}
-              >
-                Get Started
-              </button>
-            </div>
           </div>
         </div>
       </div>

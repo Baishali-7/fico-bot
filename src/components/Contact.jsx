@@ -19,7 +19,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-28 bg-gradient-to-b from-black via-[#08140e] to-black text-white">
+    <section
+      className="py-28 bg-gradient-to-b from-black via-[#08140e] to-black text-white"
+      id="contact"
+    >
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* LEFT CONTENT */}
